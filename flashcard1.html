@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Flashcard Game</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌸Language Flashcards🌸</h1>
+
+        <div class="flashcard-container" id="flashcard-container">
+            <div class="flashcard" onclick="flipCard(this)">
+                <div class="card-face card-front">
+                    <p id="word-display">Hola</p>
+                    <small>Click to see the answer</small>
+                </div>
+                <div class="card-face card-back">
+                    <p id="translation-display">Hi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="backend.js"></script>
+</body>
+</html>
